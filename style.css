@@ -1,0 +1,287 @@
+/* navbar */
+#top_nav {
+    background-color: #daac00 !important;
+    /*already bg-body- tertiary is given so to use our customize color we made it important*/
+    padding: 0 8%;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--bs-navbar-active-color);
+    font-size: 20px;
+    padding-left: 25px !important;
+}
+
+#searchbox {
+    background-color: #fcc302;
+    color: white;
+    border: 0;
+    border-radius: 0;
+    position: relative;
+    left: 8px;
+    box-shadow: 5px 10px 11px 0px rgb(91, 89, 89);
+
+}
+
+#searchbox::placeholder {
+    /*changing color of placeholder*/
+    color: white;
+}
+
+#searchbutton {
+    /*hmara search button, search box k niche ho gya hai...toh ishe uper lane k liy hmlog z-index ka use krege*/
+    position: relative;
+    z-index: 99;
+    background-color: #00bce9;
+    color: white;
+    border: 0;
+    border-radius: 0;
+
+}
+
+@media only screen and (max-width: 768px) {
+    #searchform {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .img-fluid {
+        width: 150px;
+    }
+}
+
+/*banner*/
+#banner {
+    background-color: #fcc302;
+    padding-bottom: 20px;
+}
+
+/* #bannertext{
+    color: white;
+    padding: 120px;
+} */
+#bannertext h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 100px;
+}
+
+#bannertext p {
+    color: white;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#banner-btn-1 {
+    background-color: #00bec9;
+    border: 2px solid #00bec9;
+    color: white;
+}
+
+#banner-btn-2 {
+    border: 2px solid white;
+    color: white;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 1300px) {
+    #bannertext h1 {
+        font-size: 33px;
+    }
+
+}
+
+#bannerimg {
+    padding-top: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+    #bannerimg {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    #bannertext h1 {
+        font-size: 25px;
+    }
+}
+
+/*service container*/
+#servicetext{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+#service-btn{
+    color: white;
+    background-color: #fcc302;
+    border: 2px solid #fcc302;
+}
+#service-img{
+    padding: 5%;
+}
+#servicetext h1{
+    font-size: 50px;
+}
+#servicetext p{
+    padding: 3% 0;
+    font-size: 30px;
+}
+@media only screen and (max-width:1250px){
+    #servicetext h1 {
+        font-size: 28px;
+    }
+}
+/* title*/
+#title{
+    background-color: #fcc302;
+}
+#title-text{
+    padding-top: 4%;
+}
+#title-text h1{
+    font-size: 50px;
+   
+}
+#title-text p{
+    font-size: 30px;
+}
+#title-img{
+    padding-top: 2%;
+    padding-bottom: 4%;
+}
+#title-img p{
+    font-size: 24px;
+    padding-top: 2%;
+}
+#title-img img{
+    padding-top: 5%;
+}
+#img-btn{
+    border-radius: 600px !important;
+}
+@media only screen and (max-width:700px){
+    #title-text p {
+        font-size: 13px;
+    }
+}
+/* vet team*/
+#vetTeam-text{
+    padding: 5% 0 3% 0;
+}
+#vetTeam-text h1{
+    font-size: 60px;
+}
+#vetTeam-text p{
+    font-size: 30px;
+}
+#vetTeam-img{
+    padding:3% 0 5% 0 ;
+}
+#vetTeam-img h3{
+    padding-top: 4%;
+}
+#vetTeam-img p{
+    color: #fcc302;
+}
+@media only screen and (max-width:630px){
+    #vetTeam-text p{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:500px){
+    #vetTeam-text h1 {
+        font-size: 37px;
+    }
+}
+/* counter */
+#counter-section{
+    background-image: url(download_bg.png);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-position: center;
+    background-size:cover ;
+
+}
+#counterIcon{
+    width: 90px;
+}
+
+/*posts */
+#post-text{
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+#post-text h1{
+    font-size: 60px;
+}
+#post-text p{
+    font-size: 30px;
+}
+
+#post-img{
+    padding-top: 2%;
+    padding-bottom: 6%;
+}
+#post-img span{
+    color: #00bec9;
+}
+#post-img a{
+    text-decoration: none;
+    color: #00bec9;
+}
+#cards{
+    padding: 5%  0;
+}
+/* footer */
+#footer{
+    background-color: #343434;
+    padding: 80px 0;
+}
+#footer a{
+    color: white;
+    text-decoration: none;
+}
+#footer-form{
+    margin: 10px 0;
+}
+#footer-search-box{
+    background-color:#fcc302 ;
+    border: 0;
+    padding: 15px;
+    width: 100%;
+    max-width: 250px;
+    position: relative;
+    left: 10px;
+    
+}
+#footer-search-submit{
+    background-color: #00bec9;
+    color: white;
+    border: 0;
+    border-radius: 0;
+    padding: 15px 40px;
+}
+.social-icon{
+    font-size: 25px;
+    padding-left: 5px;
+}
+@media only screen and (max-width:1150px){
+    #footer-search-box{
+        max-width: 200px;
+    }
+}
+@media only screen and (max-width:768px){
+    #footer-search-box{
+        max-width: 120px;
+    }
+    #footer{
+        padding-top: 50px;
+    }
+    #footer h4{
+        padding-top: 50px;
+    }
+}

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap-icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- For navbar we don't need to keep it in any container -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-body-tertiary" id="top_nav">
+    <!-- from navbar-dark nav content becomes white -->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Logo.png" alt="Error" class="img-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Services</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" id="searchform">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbox">
+          <button class="btn btn-outline-success" type="submit" id="searchbutton">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- container-fluid -->
+  <div class="container-fluid">
+    <!-- banner -->
+    <div class="row justify-content-evenly" id="banner">
+      <div class="col-md-6 col-11" id="bannertext">
+        <h1>First I wanted to be <br>
+          a veterinarian</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, deleniti. Eveniet hic harum mollitia! Tempore
+          voluptas aperiam consequuntur eius, delectus voluptatum? Blanditiis eveniet aliquam aut.</p>
+        <button type="button" class="btn" id="banner-btn-1">Contact Us</button>
+        <button type="button" class="btn" id="banner-btn-2">Our Service</button>
+      </div>
+      <div class="col-md-4 d-none d-md-block" id="bannerimg">
+        <!-- by d-none ye pura image hat jyga.....and by d-md-block, medium k baad se image show hoga -->
+        <img src="Place_Your_Image_Here_(Double_Click_to_Edit).png" class="img-fluid" alt="Error">
+      </div>
+    </div>
+    <!-- Service -->
+    <div class="row justify-content-evenly" id="service">
+      <div class="col-md-5 col-11" id="servicetext">
+        <h1>
+          As a veterinarian and <br>
+          lover of animals.
+        </h1>
+        <p>
+          Lorem Ipsum available but the majoty
+          suffered alteration in some form, by
+          humour randomised words.
+        </p>
+        <button type="button" class="btn" id="service-btn">Our Service</button>
+      </div>
+      <div class="col-md-5 col-11" id="service-img">
+        <img src="Image.png" class="img-fluid" alt="Error">
+      </div>
+    </div>
+    <!-- Title -->
+    <div class="row text-white" id="title">
+      <div class="row text-center" id="title-text">
+        <h1>Title Here</h1>
+        <p>
+          Lorem Ipsum available, but the majority have <br>
+          suffered alteration in some form.
+        </p>
+      </div>
+      <!-- title-img -->
+      <div class="row justify-content-evenly" id="title-img">
+        <div class="col-md-3 col-11 text-center">
+          <img src="download (1).png" class="img-fluid" alt="Error">
+          <p><strong><del>$50</del> &nbsp; $30</strong></p>
+          <button type="button" class="btn btn-info text-white" id="img-btn">Buy Now</button>
+        </div>
+        <div class="col-md-3 col-11 text-center">
+          <img src="download (2).png" class="img-fluid" alt="Error">
+          <p><strong><del>$40</del> &nbsp; $25</strong></p>
+          <!-- &nbsp; used for giving space between two words -->
+          <button type="button" class="btn btn-info text-white" id="img-btn">Buy Now</button>
+        </div>
+        <div class="col-md-3 col-11 text-center">
+          <img src="download (3).png" class="img-fluid" alt="Error">
+          <p><strong><del>$45</del> &nbsp; $20S</strong></p>
+          <button type="button" class="btn btn-info text-white" id="img-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- The vetcare Team -->
+    <div class="row" id="vet-team">
+      <div class="row text-center" id="vetTeam-text">
+        <h1>The vetcare team</h1>
+        <p> Lorem Ipsum available, but the majority have <br>
+          suffered alteration in some form.</p>
+      </div>
+
+      <!-- vetcare team img -->
+      <div class="row justify-content-evenly" id="vetTeam-img">
+        <div class="col-md-3 col-11 text-center">
+          <img src="download (4).png" class="img-fluid" alt="Error">
+          <h3>Jennifer Mullen</h3>
+          <h6>VETERINARY</h6>
+          <p>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-whatsapp"></i>
+          </p>
+        </div>
+        <div class="col-md-3 col-11 text-center">
+          <img src="download (5).png" class="img-fluid" alt="Error">
+          <h3>Sheeren Collins</h3>
+          <h6>ADMINISTRATION</h6>
+          <p>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-whatsapp"></i>
+          </p>
+        </div>
+        <div class="col-md-3 col-11 text-center">
+          <img src="download (6).png" class="img-fluid" alt="Error">
+          <h3>Jennifer Bullen</h3>
+          <h6>VETERINARY</h6>
+          <p>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-whatsapp"></i>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- counter -->
+    <div class="row justify-content-center" id="counter-section">
+      <div class="col-md-3 col-11 text-center text-white " id="Counter-1">
+        <img src="download (8).png" class="img-fluid" alt="Error" id="counterIcon">
+        <h3>
+          +34793 <br>
+          Happy Clients
+        </h3>
+      </div>
+      <div class="col-md-3 col-11 text-center text-white " id="Counter-2">
+        <img src="download (9).png" class="img-fluid" alt="Error" id="counterIcon">
+        <h3>
+          +45382 <br>
+          Departament
+        </h3>
+      </div>
+      <div class="col-md-3 col-11 text-center text-white " id="Counter-3">
+        <img src="download (10).png" class="img-fluid" alt="Error" id="counterIcon">
+        <h3>
+          +54762 <br>
+          Vaccinations
+        </h3>
+      </div>
+    </div>
+    <!-- Recent posts -->
+    <div class="row">
+      <div class="row text-center" id="post-text">
+        <h1>Recent Posts</h1>
+        <p> Lorem Ipsum available, but the majority have <br>
+          suffered alteration in some form.</p>
+      </div>
+      <!-- post-img -->
+      <div class="row justify-content-evenly " id="post-img">
+        <div class="col-md-3 col-11" id="cards">
+          <div class="card" style="width: 18rem;">
+            <img src="poast1.png" class="card-img-top" alt="Error">
+            <div class="card-body">
+              <h5 class="card-title">As a veterinarian and <br>
+                lover of animals</h5>
+              <span>FEBRUARY 09, 2023</span>
+              <p class="card-text">Lorem Ipsum available, but the majo
+                rity have suffered alteration in some
+                words which look.</p>
+              <a href="#"><strong>Read more+</strong></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-11" id="cards" id="card-2">
+
+          <div class="card" style="width: 18rem;">
+            <img src="post2.png" class="card-img-top" alt="Error">
+
+            <div class="card-body">
+              <h5 class="card-title">As a veterinarian and <br>
+                lover of animals</h5>
+              <span>FEBRUARY 10, 2023</span>
+              <p class="card-text">Lorem Ipsum available, but the majo
+                rity have suffered alteration in some
+                words which look.</p>
+              <a href="#"><strong>Read more+</strong></a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 col-11 " id="cards">
+
+          <div class="card" style="width: 18rem;">
+            <img src="post3.png" class="card-img-top" alt="Error">
+
+            <div class="card-body">
+              <h5 class="card-title">As a veterinarian and <br>
+                lover of animals</h5>
+              <span>FEBRUARY 11, 2023</span>
+              <p class="card-text">Lorem Ipsum available, but the majo
+                rity have suffered alteration in some
+                words which look.</p>
+              <a href="#"><strong>Read more+</strong></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="row justify-content-center text-white" id="footer">
+      <div class="col-md-3 col-11">
+        <h4>About</h4>
+        <a href="#">History</a> <br>
+        <a href="#">Our Team</a> <br>
+        <a href="#">Brand Guidelines</a> <br>
+        <a href="#">Terms & Condition</a> <br>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="col-md-2 col-11">
+        <h4>Services</h4>
+        <a href="#">How to Order</a> <br>
+        <a href="#">Our Product</a> <br>
+        <a href="#">Order Status</a> <br>
+        <a href="#">Promo</a> <br>
+        <a href="#">Payment Method</a>
+      </div>
+      <div class="col-md-4 col-11 text-end">
+        <h4>Title Here</h4>
+        <p> Lorem Ipsum available, but the majorit </p>
+        <form action="" id="footer-form">
+          <input  type="text" id="footer-search-box">
+          <button  type="submit" id="footer-search-submit">
+            <i class="bi bi-cursor-fill"></i>
+          </button>
+        </form>
+        <i class="bi bi-instagram social-icon"></i>
+        <i class="bi bi-facebook social-icon"></i>
+        <i class="bi bi-twitter social-icon"></i>
+        <i class="bi bi-whatsapp social-icon"></i>
+      </div>
+
+    </div>
+
+    <!-- container-fluid end -->
+  </div>
+
+
+
+  <!-- Bootstrap js bunddle with popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
